@@ -5,5 +5,10 @@ class Team
   def initialize(params)
     @team = params[:team]
     @motto = params[:motto]
+    TEAMS << self
+  end
+
+  def self.all
+    TEAMS
   end
 end
